@@ -1,0 +1,452 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+
+@import "compass/reset";
+$primary-color: #0a233d;
+$secondary-color: #4077f2;
+
+body{
+
+  font-family: 'Calibri';
+  padding-bottom: 40px;
+
+}
+
+header{
+  height: 99px;
+  background-color: $primary-color;
+  padding: 3%;
+
+  .header-link{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+}
+
+
+
+.img-hclass{
+  height: 45px;
+  margin-right: 5%;
+}
+
+
+
+#left-div{
+
+  float: left;
+  width: 28%;
+  margin-top: 20px;
+
+}
+
+#menu-div{
+
+  float: left;
+  width: 15%;
+  margin: 3%;
+
+}
+
+#logo-div{
+  float: left;
+  width: 62%;
+  margin: 3%;
+}
+
+#center-div{
+  padding: 0 3% 0 3%;
+  float: left;
+  width: 40%;
+  margin-top: 45px;
+  li{
+    float: left;
+    margin-right: 6%;
+  }
+}
+
+#right-div{
+
+  float:right;
+  margin-top: 37px;
+
+}
+
+#section-container{
+
+  padding: 2%;
+
+
+}
+
+#left-section{
+
+  padding: 3%;
+  width: 56%;
+  float: left;
+  border-right: 2px solid gray;
+
+}
+
+#div-h1 {
+
+  padding: 2%;
+}
+
+#h1-lsection{
+  color: $primary-color;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+#input-container{
+
+  margin: 5%;
+
+}
+
+#postcode-input{
+
+  width: 110px;
+  height: 32px;
+}
+
+.p-lsection{
+  color: #525151;
+  font-size: 22px;
+}
+
+.input{
+  outline:none;
+  border: solid #4077f2;
+  border-radius: 100px;
+  border-width: 2px;
+  font-family: sans-serif;
+  width: 205px;
+  height: 32px;
+  color: #4077f2;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px
+}
+
+.div-space{
+margin: 4px 0 4px 0;
+
+}
+
+#asubmit{
+
+  font-size: 27px;
+}
+
+input[type='radio'] {
+  -webkit-appearance:none;
+  width:15px;
+  height:15px;
+  border:2px solid blue;
+  border-radius:50%;
+  outline:none;
+}
+
+input[type='radio']:before {
+  content:'';
+  display:block;
+  width:60%;
+  height:60%;
+  background: white;
+  border:2px solid #4077f2;
+  border-radius:50%;
+
+}
+
+input[type='radio']:checked:before {
+  content:'';
+  display:block;
+  width:60%;
+  height:60%;
+  background: white;
+  border:2px solid red;
+  border-radius:50%;
+
+}
+
+input[type=radio]:checked +.label-button{
+
+  background-color: #0a233d;
+  color:white;
+}
+
+
+.label-button{
+
+  outline: none;
+  border: 2px solid #4077f2;
+  border-radius: 34px;
+  color: black;
+  width: 60px;
+  height: 24px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  float: left;
+  margin: 4px 2px 4px 4px;
+
+}
+
+
+.radio-toolbar input[type="radio"] {
+  outline: 0;
+  position: absolute;
+  display: none;
+}
+
+.radio-toolbar label {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 20px;
+  font-family: Arial;
+  font-size: 16px;
+  cursor: pointer;
+  border: 0.15em solid cornflowerblue;
+  padding: 0 20px;
+
+  #postcode {
+    width: 90px;
+  }
+}
+
+.outer {
+  margin: 0;
+  position: relative;
+  right: 16px;
+  top: -14px;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  border: 1px solid cornflowerblue;
+}
+.inner {
+  position: relative;
+  left: 3px;
+  top: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: cornflowerblue;
+}
+
+
+.radio-toolbar input[type="radio"]:checked + label {
+  background-color: cornflowerblue;
+  color: white;
+  .inner{
+    position: relative;
+    left: 3px;
+    top: 3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: white;
+  }
+  .outer {
+    margin: 0;
+    position: relative;
+    right: 16px;
+    top: -14px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: 1px solid white;
+  }
+
+}
+.radio-toolbar input[type="radio"]:checked + label#radio-button-select {
+  background-color: cornflowerblue;
+  border: 1px solid white;
+}
+
+
+
+#button-lsection{
+  width: 166px;
+  height: 48px;
+  vertical-align: middle;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  border-style: 2px solid;
+  background-color: #0a233d;
+  border-radius: 100px;
+  float: right;
+}
+
+footer{
+
+  clear:both;
+  border-top:  2px solid;
+  padding: 3% 8% 0 8%;
+}
+
+#left-footer{
+  width: 70%;
+  padding: 1%;
+}
+
+.p-footer{
+  font-size: 20px;
+  font-weight: 700;
+
+}
+
+.a-lfooter{
+  color: #0a233d;
+  font-family: calibri;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.a-lfooter:hover{
+
+  color: #525151;
+
+}
+
+.ul-lfooter{
+  border-top: solid #4077f2;
+  padding-top: 5px;
+}
+
+.div-lfooter{
+  float: left;
+  width:  16%;
+  margin-right: 8%;
+
+}
+
+#right-footer{
+
+  float: right;
+  width: 31%;
+  border-style: solid;
+
+  .a-rfooter{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .li-right:{
+
+  }
+  .bullet-div{
+    width: 28px;
+    height: 28px;
+    background-color: #4077f2;
+    display: inline-block;
+    border-radius: 50%;
+  }
+}
+
+#right-section{
+  float: right;
+  padding:  3%;
+}
+
+.img-rclass{
+
+  opacity: 0.7;
+  width: 51%;
+
+}
+
+#div-timage{
+
+  position: relative;
+  border-top: 10px solid #4077f2;
+  padding-top: 3%;
+}
+
+.h2-lsection{
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+#caption-topimage{
+
+  position: absolute;
+  top: 38px;
+  left: 14px;
+}
+
+#caption-bottomimage{
+  position: absolute;
+  top: 51px;
+  left: 20px;
+}
+
+#hover-tcaption{
+
+  background: $secondary-color;
+  color: white;
+  position: absolute;
+  top: 113px;
+  left: 0px;
+  font-size: 14px;
+}
+
+#hover-tcaption:hover{
+
+  font-weight: bold;
+  font: 15px;
+
+}
+
+#div-bimage{
+  position: relative;
+  border-top: 10px solid #4077f2;
+  padding-top: 3%;
+}
+
+#hover-bcaption{
+
+  background: $secondary-color;
+  color: white;
+  position: absolute;
+  top: 123px;
+  left: 0px;
+  font-size: 14px;
+
+}
+
+#hover-bcaption:hover{
+
+  font-weight: bold;
+  font: 15px;
+
+}
+
+#h1-rsection{
+
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.p-rcenter{
+
+  margin: 5px 0 5px 0;
+  color: #525151;
+  font-size: 22px;
+
+}
