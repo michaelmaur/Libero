@@ -48,7 +48,7 @@
             </h1>
         </div>
 
-
+        <form id="survey">
         <div id="input-container">
             <div  class="div-space">
                 <p class="p-lsection">
@@ -86,15 +86,17 @@
                 <p class="p-lsection">
                     E-mail Address:
                 </p>
-                <input type = text id="email-input" class="input"/>
+                <input type = text id="email-input" class="input" name="email"/>
             </div>
 
             <div class="div-space">
                 <p class="p-lsection">
                     Mobile Number:
                 </p>
-                <input type = text id="mobile-input" class="input"/>
+                <input type = text id="mobile-input" class="input" name="number"/>
             </div>
+
+        </form>
 
             <div class="div-space">
                 <button id="button-lsection" url="/post"><a id="asubmit">Submit</a></button>
@@ -203,9 +205,11 @@
     </section>
 </footer>
 
-<script src="jquery-3.1.0.min.js"></script>
-<script src="js/scripts.js"></script>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jsfile.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
 
 
-</body>
+    </body>
 </html>
